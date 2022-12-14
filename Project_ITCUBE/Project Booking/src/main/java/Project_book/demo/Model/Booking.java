@@ -1,9 +1,6 @@
 package Project_book.demo.Model;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 import java.sql.Time;
 import java.util.Date;
@@ -13,6 +10,7 @@ import java.util.Date;
 public class Booking {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
     @Column(name = "date")
     private Date date;
@@ -28,10 +26,6 @@ public class Booking {
 
     public long getId() {
         return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
     }
 
     public long getRoom_id() {

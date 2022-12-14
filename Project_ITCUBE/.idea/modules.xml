@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Project_ITCUBE.iml" filepath="$PROJECT_DIR$/.idea/Project_ITCUBE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Project Desk/demo.iml" filepath="$PROJECT_DIR$/Project Desk/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Project Booking/demo (1) (Project_book).iml" filepath="$PROJECT_DIR$/Project Booking/demo (1) (Project_book).iml" />
+      <module fileurl="file://$PROJECT_DIR$/Project Sala/demo (1) (Project_sala).iml" filepath="$PROJECT_DIR$/Project Sala/demo (1) (Project_sala).iml" />
+    </modules>
+  </component>
+</project>
