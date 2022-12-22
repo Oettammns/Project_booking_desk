@@ -1,8 +1,10 @@
 package Project_desk.demo.Service;
 
-import Project_desk.demo.Model.Desk;
+
+import Model_project.demo.Model.Desk;
 
 import java.util.List;
+
 
 public interface DeskServiceInterface {
     Desk createDesk(Desk desk);

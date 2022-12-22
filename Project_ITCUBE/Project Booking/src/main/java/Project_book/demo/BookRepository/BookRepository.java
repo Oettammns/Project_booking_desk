@@ -1,6 +1,7 @@
 package Project_book.demo.BookRepository;
 
-import Project_book.demo.Model.Booking;
+
+import Model_project.demo.Model.Booking;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface BookRepository extends JpaRepository<Booking,Long> {

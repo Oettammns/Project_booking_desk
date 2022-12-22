@@ -1,4 +1,4 @@
-package Project_book.demo.Model;
+package Model_project.demo.Model;
 
 import jakarta.persistence.*;
 
@@ -16,10 +16,19 @@ public class Booking {
     private Date date;
     @Column(name = "time")
     private Time time;
-    @Column(name = "room_id")
-    private long room_id;
-    @Column(name = "desk_id")
-    private long desk_id;
+
+    @ManyToOne(cascade = CascadeType.ALL)
+    /*
+    @JoinTable(
+            name = "booking_room",
+            joinColumns = @JoinColumn(name = "booking_id"),
+            inverseJoinColumns = @JoinColumn(name = "room_id"))*/
+    @JoinColumn(name = "room_id")
+    private Room room_id;
+
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "desk_id")
+    private Desk desk_id;
 
     public Booking() {
     }
@@ -28,11 +37,11 @@ public class Booking {
         return id;
     }
 
-    public long getRoom_id() {
+    public Room getRoom_id() {
         return room_id;
     }
 
-    public long getDesk_id() {
+    public Desk getDesk_id() {
         return desk_id;
     }
 

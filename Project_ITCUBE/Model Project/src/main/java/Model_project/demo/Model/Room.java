@@ -1,6 +1,8 @@
-package Project_sala.demo.Model;
+package Model_project.demo.Model;
 
 import jakarta.persistence.*;
+
+import java.util.List;
 
 @Entity
 @Table(name = "room")
@@ -16,7 +18,18 @@ public class Room {
     @Column(name = "address")
     private String address;
 
+    @OneToMany(mappedBy = "room" ,cascade = CascadeType.ALL)
+    private List<Desk> desks;
+
+    @OneToMany(mappedBy = "room_id", cascade = CascadeType.ALL)
+    private List<Booking> booking;
+
     public Room() {
+    }
+
+    public Room(String name, String address){
+        this.name = name;
+        this.address = address;
     }
 
     public long getId() {

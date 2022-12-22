@@ -1,6 +1,6 @@
 package Project_book.demo.Service;
 
-import Project_book.demo.Model.Booking;
+import Model_project.demo.Model.Booking;
 
 import java.util.List;
 

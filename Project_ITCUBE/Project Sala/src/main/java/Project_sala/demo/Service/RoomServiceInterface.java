@@ -1,6 +1,7 @@
 package Project_sala.demo.Service;
 
-import Project_sala.demo.Model.Room;
+
+import Model_project.demo.Model.Room;
 
 import java.util.List;
 
